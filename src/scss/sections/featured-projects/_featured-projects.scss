@@ -1,0 +1,97 @@
+.featured__list {
+    margin-bottom: 10px;
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.featured__link {
+    text-decoration: none;
+}
+
+.featured__link:hover .featured {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+  }
+
+.featured {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    margin-bottom: 20px;
+
+    border: 2px solid $blue; // TODO: Make similar to colors currently used
+    border-radius: 8px;
+    // background-color: rgb(245, 245, 255); // TODO: Make into variable
+    background-color: $primary-20;
+}
+
+.featured__header {
+    margin-top: pxToRem(20px);
+    // margin-bottom: pxToRem(20px);
+    width: calc(100% - #{pxToRem(50px)});
+}
+
+.featured__content {
+    display: flex;
+    flex-direction: column;
+    // width: calc(70% - #{pxToRem(50px)});
+    width: 67%;
+}
+
+.featured__img {
+    // border: 5px solid red; // TODO: Make similar to colors currently used
+    width: 33%;
+    padding: pxToRem(20px);
+
+    height: auto;
+    display: block;
+    object-fit: contain; // optional, if img is inside a box
+
+    // TODO: how to lock height according to width
+
+}
+
+// .featured__img {
+//     // display: flex;
+//     width: 33%;
+// }
+
+.featured-keywords__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    font-size: pxToRem(12px);
+}
+
+.featured__keyword {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc; /* light gray border */
+    border-radius: 9999px; /* makes it fully oval */
+    font-size: 0.875rem;
+    background-color: white;
+    color: #333;
+    width: auto;
+    white-space: nowrap; /* prevents breaking text in the middle */
+}
+
+.featured__title {
+    a {
+        text-decoration: none;
+        transition: box-shadow $transition-duration $transition-time-function;
+
+        @include animoff;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Blog-post__surface meaning?

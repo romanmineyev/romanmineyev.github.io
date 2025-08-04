@@ -53,5 +53,9 @@ module.exports = merge(common, {
             filename: "404.html",
             template: "./src/404.html"
         }),
+        new HtmlWebpackPlugin({ // NOTE: Any new HTML page should be added here
+            filename: "ball_tracking.html",
+            template: "./src/ball_tracking.html"
+        }),
     ],
 });
