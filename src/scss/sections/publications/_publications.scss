@@ -1,0 +1,33 @@
+$darkorange: #FF8C00;
+
+.publications {
+    &__text {
+        font-size: 20px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__pdf_link {
+        color: $darkorange;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            outline: none; // Remove the default outline
+            color: darken($darkorange, 10%); // Provide visual feedback
+        }
+
+    }
+}
+
+// .publications__text {
+//     font-size: 20px;
+//     // line-height: 1.5;
+//     // color: #333;
+//     // margin-bottom: 1rem;
+//     // font-family: 'Arial', sans-serif;
+// }
