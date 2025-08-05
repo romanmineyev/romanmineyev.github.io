@@ -52,6 +52,7 @@
 </head>
 
 <body class="page-home default-theme site-is-loading site--composition ">
+    <div id="background"></div>
     <!-- SITE WRAPPER -->
     <div id="site">
         <!-- SITE PRELOADER -->
@@ -236,140 +237,76 @@
 
         <!-- SITE MAIN CONTENT -->
         <main class="site-main" id="site-main" tabindex="-1">
-            <!-- <section id="banner" class="banner" tabindex="-1">
-                <div class="container-fluid">
-                    <div class="banner__grid ">
-
-                        <div class="banner__content">
-                            <div class="banner__introductory">
-                                <div class="banner__introductory-text">Hi, my name is</div>
-                                <div class="banner__introductory-line">
-                                    <span class="line line--horizontal line--banner"></span>
-                                </div>
-                            </div>
-
-                            <h1 class="site-title"><strong>Roman</strong>
-                            </h1>
-
-                            <div class="banner__box">
-                                <p class="site-subtitle">
-                                    I am a Master in Robotics student at the Georgia Institute of Technology, 
-                                    specializing in bipedal motion planning, control, and social navigation.
-                                    I currently work at The Laboratory for Intelligent Decision and Autonomous Robots (LIDAR) Lab.
-                                </p>
-                                <a href="#banner" id="download-button"
-                                    class="banner__button button button--default"><span class="line--underline">Download
-                                        Resume</span></a>
-                            </div>
-                        </div>
-                        <div class="banner__img">
-                            <img class="img-fluid preloadimage" src="./assets/banner/site-banner-1.jpg"
-                                alt="Man seen from the back on top of a building looking at the city in front of him">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <!-- <main class="site-main" id="site-main" tabindex="-1"></main>
-                <section id="banner" class="banner" tabindex="-1">
-
-                    <div class="banner__full-cover jarallax">
-
-                        <img class="jarallax-img" src="./assets/banner/site-banner-fullscreen-1.jpg"
-                            alt="Man seen from the back on top of a building looking at the city in front of him">
-
-                        <span class="banner__full-cover-overlay"></span>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="banner__grid banner__grid--fullscreen">
-                            <div class="banner__content">
-                                <div class="banner__introductory">
-                                    <div class="banner__introductory-text">Hi, my name is</div>
-                                    <div class="banner__introductory-line">
-                                        <span class="line line--horizontal line--banner"></span>
-                                    </div>
-                                </div>
-
-                                <h1 class="site-title"><strong>Leeneon</strong>, I'm a free accessible portfolio template.
-                                </h1>
-
-                                <div class="banner__box">
-                                    <p class="site-subtitle">Leeneon is an open source portfolio template designed and
-                                        developed to be accessible for as many users as possible. This site is a demo, all
-                                        the content should be edited by you.</p>
-                                    <a href="#banner" id="download-button"
-                                        class="banner__button button button--default"><span class="line--underline">Download
-                                            Leeneon</span></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section> -->
-            <!-- END SITE BANNER SECTION -->
             <!-- FEATURED PROJECTS -->
-             <section id="featured" class="section" tabindex="-1">
-                <div class="container">
-                    <header class="section__header fade-up-start" data-gc="fade-up">
-                        <h2>Featured Projects</h2>
-                        <div class="line line--horizontal line--heading" aria-hidden="true"></div>
-                        <!-- <p class="section__header-p">Here are a list of some of the projects that I have worked on.</p> -->
-                    </header>
-                    <!-- TODO: Add code to make an interesting featured projects section -->
-                    <div class="featured__list">
-                        <a href="https://bipedal-stl.github.io/" class="featured__link">
-                            <article class="featured fade-up-start" data-gc="fade-up">
-                                <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/STL_MLD.png" alt="STL-MLD">
-                                <div class="featured__content">
-                                    <header class="featured__header">
-                                            <h3 class="featured__title">
-                                                Accelerating Signal-Temporal-Logic-Based Task and Motion Planning of Bipedal Locomotion using Benders Decomposition
-                                            </h3>
-                                    </header>
-                                    <p>
-                                        Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
-                                        Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
-                                    </p>
-                                    <div class="featured-keywords__container">
-                                        <p class="featured__keyword">Motion Planning</p>
-                                        <p class="featured__keyword">Signal Temporal Logic</p>
-                                        <p class="featured__keyword">Model-Predictive Control</p>
-                                        <p class="featured__keyword">Bipedal Locomotion</p>
-                                        <p class="featured__keyword">ROS</p>
-                                        <p class="featured__keyword">MuJoCo</p>
-                                        <p class="featured__keyword">Humanoid</p>
-                                        <p class="featured__keyword">Python</p>
-                                        <p class="featured__keyword">C++</p>
+             <div class="featured__parent">
+                <div class="featured__side"></div>
+                <section id="featured" class="section" tabindex="-1">
+                    <div class="container">
+                        <header class="section__header fade-up-start" data-gc="fade-up">
+                            <h2>Featured Projects</h2>
+                            <div class="line line--horizontal line--heading" aria-hidden="true"></div>
+                        </header>
+                        <!-- TODO: Add code to make an interesting featured projects section -->
+                        <div class="featured__list">
+                            <a href="https://bipedal-stl.github.io/" class="featured__link">
+                                <article class="featured fade-up-start" data-gc="fade-up">
+                                    <!-- <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/STL_MLD.png" alt="STL-MLD"> -->
+                                    <video autoplay loop muted playsinline class="featured__vid" style="background-color: white; object-position: 44% center;">
+                                        <source src="./assets/blog/doorpuzzle_demo.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="featured__content">
+                                        <header class="featured__header">
+                                                <h3 class="featured__title">
+                                                    Accelerating Signal-Temporal-Logic-Based Task and Motion Planning of Bipedal Locomotion using Benders Decomposition
+                                                </h3>
+                                        </header>
+                                        <p>
+                                            Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
+                                            Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
+                                        </p>
+                                        <div class="featured-keywords__container">
+                                            <p class="featured__keyword">Motion Planning</p>
+                                            <p class="featured__keyword">Signal Temporal Logic</p>
+                                            <p class="featured__keyword">Model Predictive Control</p>
+                                            <p class="featured__keyword">Bipedal Locomotion</p>
+                                            <p class="featured__keyword">ROS</p>
+                                            <p class="featured__keyword">MuJoCo</p>
+                                            <p class="featured__keyword">Humanoid</p>
+                                            <p class="featured__keyword">Python</p>
+                                            <p class="featured__keyword">C++</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="ball_tracking.html" class="featured__link">
-                            <article class="featured fade-up-start" data-gc="fade-up">
-                                <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/football_tracking.png" alt="STL-MLD">
-                                <div class="featured__content">
-                                    <header class="featured__header">
-                                            <h3 class="featured__title">
-                                                Perception-Based Football Tracking with a 3-DOF Gimbal Mounted on a Quadruped
-                                            </h3>
-                                    </header>
-                                    <p>
-                                        Led the development of a perception-based object-tracking pipeline to detect and track fast-moving footballs 
-                                        using a high-speed camera on a 3-DOF gimbal attached to a quadruped.. Trained a YOLO model to detect a moving football using synthetic image generation.
-                                    </p>
-                                    <p>
-                                        Achieved 95% tracking accuracy for footballs thrown at 25–35 mph over 5–15 meters.
-                                    </p>
-                                    <div class="featured-keywords__container">
-                                        <p class="featured__keyword">Object Tracking</p>
-                                        <p class="featured__keyword">PID</p>
-                                        <p class="featured__keyword">Quadruped</p>
+                                </article>
+                            </a>
+                            <a href="ball_tracking.html" class="featured__link">
+                                <article class="featured fade-up-start" data-gc="fade-up">
+                                    <div class="featured__content">
+                                        <header class="featured__header">
+                                                <h3 class="featured__title">
+                                                    Perception-Based Football Tracking with a 3-DOF Gimbal Mounted on a Quadruped
+                                                </h3>
+                                        </header>
+                                        <p>
+                                            Led the development of a perception-based object-tracking pipeline to detect and track fast-moving footballs 
+                                            using a high-speed camera on a 3-DOF gimbal attached to a quadruped.. Trained a YOLO model to detect a moving football using synthetic image generation.
+                                        </p>
+                                        <p>
+                                            Achieved 95% tracking accuracy for footballs thrown at 25–35 mph over 5–15 meters.
+                                        </p>
+                                        <div class="featured-keywords__container">
+                                            <p class="featured__keyword">Object Tracking</p>
+                                            <p class="featured__keyword">PID</p>
+                                            <p class="featured__keyword">Quadruped</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </article>
-                        </a>
+                                    <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/football_tracking.png" alt="STL-MLD">
+                                </article>
+                            </a>
+                        </div>
                     </div>
-                </div>
-             </section>
+                </section>
+            </div>
             <!-- END FEATURED PROJECTS -->
             <!-- BLOG -->
             <section id="blog" class="section" tabindex="-1">
@@ -1615,6 +1552,7 @@
         }
     </script>
 
+    <!-- <canvas id="background"></canvas> -->
 </body>
 
 </html>

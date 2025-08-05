@@ -69,6 +69,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     border-radius: pxToRem(2px);
+
     @include theme-transition;
 
     @include animoff();

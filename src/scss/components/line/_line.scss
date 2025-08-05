@@ -24,11 +24,11 @@
     width: pxToRem(100px);
     margin: 1rem 0;
     position: relative;
-    #{$start-direction}: -#{pxToRem(30px)};
+    // #{$start-direction}: -#{pxToRem(30px)};
 
     @include mq($breakpoint-md) {
         width: pxToRem(150px);
-        #{$start-direction}: -#{pxToRem(60px)};
+        // #{$start-direction}: -#{pxToRem(60px)};
     }
 }
  

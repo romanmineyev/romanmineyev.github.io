@@ -17,12 +17,13 @@
         color: $background;
     }
 
-    .site-header {
-        background-color: rgba($background, 0.9);
-    }
+    // .site-header {
+    //     background-color: rgba($background, 1);
+    // }
 
     .site-brand {
-        color: $primary;
+        // color: $primary;
+        color: white;
     }
 
     .site-navigation {

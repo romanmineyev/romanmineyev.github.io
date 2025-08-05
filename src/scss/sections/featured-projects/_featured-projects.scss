@@ -1,6 +1,23 @@
+.featured__parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.featured__side {
+    width: 30%;
+    // height: 1000px;
+    height: 100vh;
+
+    // margin-left: 20px;
+    // margin-top: 220px; // TODO: Make sure this height is valid for any screen size
+
+    background-color: $primary;
+}
+
 .featured__list {
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
 
     margin: 0 auto;
 }
@@ -21,6 +38,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+
+    width: 85%;
+    margin: 0 auto;
     
     margin-bottom: 20px;
 
@@ -40,13 +60,15 @@
     display: flex;
     flex-direction: column;
     // width: calc(70% - #{pxToRem(50px)});
-    width: 67%;
+    margin: pxToRem(20px);
 }
 
 .featured__img {
-    // border: 5px solid red; // TODO: Make similar to colors currently used
-    width: 33%;
-    padding: pxToRem(20px);
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+
+    width: 30%;
+    margin: pxToRem(20px);
 
     height: auto;
     display: block;
@@ -54,6 +76,23 @@
 
     // TODO: how to lock height according to width
 
+}
+
+.featured__vid {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    
+
+    width: auto;
+    max-width: 30%;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    padding-top: pxToRem(10px);
+    padding-bottom: pxToRem(10px);
+
+    margin: pxToRem(20px);
 }
 
 // .featured__img {
@@ -68,11 +107,13 @@
     flex-wrap: wrap;
     gap: 0.25rem;
     font-size: pxToRem(12px);
+
+    margin-top: auto;
 }
 
 .featured__keyword {
     padding: 0.3rem 0.5rem;
-    border: 1px solid #ccc; /* light gray border */
+    border: 1px solid gainsboro; /* light gray border */
     border-radius: 9999px; /* makes it fully oval */
     font-size: 0.875rem;
     background-color: white;
