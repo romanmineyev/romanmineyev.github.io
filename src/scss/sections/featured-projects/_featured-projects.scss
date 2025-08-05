@@ -4,7 +4,7 @@
     justify-content: flex-start;
 }
 
-.featured__side {
+.featured__panel {
     width: 30%;
     // height: 1000px;
     height: 100vh;
@@ -16,6 +16,21 @@
     // margin-top: 220px; // TODO: Make sure this height is valid for any screen size
 
     background-color: $primary;
+}
+
+.featured-panel__content {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 30%;
+    height: 100vh;
+
+    z-index: 2;
+}
+
+.featured__profile {
+    margin: 0px;
 }
 
 .featured__list {

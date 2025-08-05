@@ -1,0 +1,17 @@
+{
+    "autoPlay": true,
+    "background": {
+      "color": {
+        "value": "#192136"
+      },
+      "image": "",
+      "position": "",
+      "repeat": "",
+      "size": "",
+      "opacity": 1
+    },
+
+    "fullScreen": {
+        "enable": false
+    }
+}
