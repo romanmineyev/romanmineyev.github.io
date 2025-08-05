@@ -2,15 +2,13 @@
     box-sizing: border-box;
 }
 
-#background {
+#tsparticles {
     position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999; /* Bring to front temporarily */
-    pointer-events: none;
-    background-color: black;
+    // z-index: -1;
 }
 
 html {

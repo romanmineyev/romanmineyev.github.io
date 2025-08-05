@@ -52,7 +52,6 @@
 </head>
 
 <body class="page-home default-theme site-is-loading site--composition ">
-    <div id="background"></div>
     <!-- SITE WRAPPER -->
     <div id="site">
         <!-- SITE PRELOADER -->
@@ -239,7 +238,9 @@
         <main class="site-main" id="site-main" tabindex="-1">
             <!-- FEATURED PROJECTS -->
              <div class="featured__parent">
-                <div class="featured__side"></div>
+                <div class="featured__side">
+                    <div id="tsparticles"></div>
+                </div>
                 <section id="featured" class="section" tabindex="-1">
                     <div class="container">
                         <header class="section__header fade-up-start" data-gc="fade-up">
@@ -1551,8 +1552,7 @@
             document.body.appendChild(script);
         }
     </script>
-
-    <!-- <canvas id="background"></canvas> -->
+    <!-- <script src="tsparticles.engine.min.js"></script> -->
 </body>
 
 </html>
