@@ -1,5 +1,5 @@
 {
-    "autoPlay": true,
+    "autoPlay": false,
     "background": {
       "color": {
         "value": "#192136"
