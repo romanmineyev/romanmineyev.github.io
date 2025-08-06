@@ -13,7 +13,7 @@ import { loadSlim } from "@tsparticles/slim";
 loadSlim(tsParticles).then(() => {
     tsParticles.load({
       id: "tsparticles",
-      url: "presets/custom.json",
+      url: "assets/presets/custom.json",
     });
   });
 
