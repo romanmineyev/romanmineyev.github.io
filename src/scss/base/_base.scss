@@ -2,22 +2,6 @@
     box-sizing: border-box;
 }
 
-.site-main {
-    width: 70vw;
-    float: right;
-
-    padding-left: 50px;
-}
-
-#tsparticles {
-    position: fixed;
-    width: 30%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    // z-index: -1;
-}
-
 html {
     font-size: $root-font-size;
 }

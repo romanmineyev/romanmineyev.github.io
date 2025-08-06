@@ -4,30 +4,37 @@
     justify-content: flex-start;
 }
 
-.featured__panel {
-    width: 30%;
-    // height: 1000px;
-    height: 100vh;
-    overflow: hidden;
+// .featured__panel {
+//     width: 30%;
+//     // height: 1000px;
+//     height: 100vh;
+//     overflow: hidden;
 
-    // border: 1px solid red;
+//     // border: 1px solid red;
 
-    // margin-left: 20px;
-    // margin-top: 220px; // TODO: Make sure this height is valid for any screen size
+//     // margin-left: 20px;
+//     // margin-top: 220px; // TODO: Make sure this height is valid for any screen size
 
-    background-color: $primary;
-}
+//     background-color: $primary;
+// }
 
-.featured-panel__content {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 30%;
-    height: 100vh;
+// .featured-panel__img {
+//     width: 50%;
+//     height: auto;
+//     object-fit: cover;
+//     aspect-ratio: 1 / 1;
+// }
 
-    z-index: 2;
-}
+// .featured-panel__content {
+//     position: fixed;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     width: 30%;
+//     height: 100vh;
+
+//     z-index: 2;
+// }
 
 .featured__profile {
     margin: 0px;
@@ -66,6 +73,7 @@
     border: 2px solid $blue; // TODO: Make similar to colors currently used
     border-radius: 8px;
     // background-color: rgb(245, 245, 255); // TODO: Make into variable
+    // background-color: $primary-20;
     background-color: $primary-20;
 }
 
@@ -91,9 +99,10 @@
 
     height: auto;
     display: block;
-    object-fit: contain; // optional, if img is inside a box
+    object-fit: cover; // optional, if img is inside a box
 
     // TODO: how to lock height according to width
+    display: block;
 
 }
 

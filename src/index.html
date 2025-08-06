@@ -71,7 +71,7 @@
             <!-- END SKIP TO CONTENT -->
 
             <!-- SITE LOGO -->
-            <a id="site-brand" class="site-brand" href="#banner">Roman Mineyev</a>
+            <a id="site-brand" class="site-brand" href="#banner"></a>
             <!-- Uncomment the line below to use image logos instead of text -->
             <!-- <a id="site-brand" class="site-brand-img" href="#banner"><img src="https://via.placeholder.com/100x40" alt="Site logo"></a> -->
             <!-- END SITE LOGO -->
@@ -234,77 +234,130 @@
         </div>
         <!-- END ACCESSIBILITY PREFERENCES -->
 
+        <div class="panel">
+            <div class="panel-profile__wrapper">
+                <img loading="lazy" class="img-fluid panel__profile lazyload"
+                data-src="./assets/about/professional-portrait.jpg"
+                alt="Portrait">
+            </div>
+            <h1 class="panel__title">Roman Mineyev</h1>
+            <div class="panel__text">
+                <!-- <p>
+                    Master in Robotics at Georgia Institute of Technology (Georgia Tech)
+                </p> -->
+
+                <p>
+                    I am a second-year Master in Robotics student at Georgia Tech, specializing 
+                    in Machine Learning, Perception, and Task and Motion Planning algorithms.
+                </p>
+                <!-- <p>
+                    I am a Master in Robotics student at the Georgia Institute of Technology.
+                    I currently work at The Laboratory for Intelligent Decision and Autonomous Robots (<a class=about_highlight_text href="https://lab-idar.gatech.edu/" target="_blank">LIDAR</a>) Lab on <span>Bipedal Motion Planning</span>, <span>Control</span>, and <span>Social Navigation</span>.
+                </p>
+                During my undergraduate years, I was a Mathematics & Computer Science major at the University of Illinois at Champaign-Urbana. I conducted 1.5 years of research at the Kinetic Intelligent Machines LAB (<a class=about_highlight_text href="https://publish.illinois.edu/kimlab2020/" target="_blank">KIMLAB</a>), where I contributed to a broad range of projects, ranging from autonomous chess playing with a robotic arm system to mobile-base manipulation. 
+                <p>
+                </p>
+                <p>
+                    My passion stems from a relentless curiosity and drive to improve the quality of human lives through robotics.
+                    This dedication motivates me to tackle complex challenges in robotics and contribute to advancements that can shape the future of humanity.
+                </p> -->
+
+                <p>
+                    I am available for Fall/Spring 2026 Internships and Jobs!
+                </p>
+            </div>
+            
+            <div class="panel__buttons">
+                <a class="button button--icon panel__button"
+                        href="https://linkedin.com/in/roman-mineyev"
+                        aria-label="LinkedIn"
+                        target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M21,21h-4v-6.8c0-1.1-1.2-1.9-2.2-1.9S13,13.2,13,14.2V21H9V9h4v2c0.7-1.1,2.4-1.8,3.5-1.8c2.5,0,4.5,2,4.5,4.5V21 M7,21H3 V9h4V21 M5,3c1.1,0,2,0.9,2,2S6.1,7,5,7S3,6.1,3,5S3.9,3,5,3z" />
+                        </svg>
+                </a>
+                <a class="button button--icon panel__button"
+                    href="https://github.com/mineyev2"
+                    aria-label="GitHub"
+                    target="_blank">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
         <!-- SITE MAIN CONTENT -->
         <main class="site-main" id="site-main" tabindex="-1">
             <!-- FEATURED PROJECTS -->
-             <div class="featured__parent">
-                <section id="featured" class="section" tabindex="-1">
-                    <div class="container">
-                        <header class="section__header fade-up-start" data-gc="fade-up">
-                            <h2>Featured Projects</h2>
-                            <div class="line line--horizontal line--heading" aria-hidden="true"></div>
-                        </header>
-                        <!-- TODO: Add code to make an interesting featured projects section -->
-                        <div class="featured__list">
-                            <a href="https://bipedal-stl.github.io/" class="featured__link">
-                                <article class="featured fade-up-start" data-gc="fade-up">
-                                    <!-- <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/STL_MLD.png" alt="STL-MLD"> -->
-                                    <video autoplay loop muted playsinline class="featured__vid" style="background-color: white; object-position: 44% center;">
-                                        <source src="./assets/blog/doorpuzzle_demo.mp4" type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <div class="featured__content">
-                                        <header class="featured__header">
-                                                <h3 class="featured__title">
-                                                    Accelerating Signal-Temporal-Logic-Based Task and Motion Planning of Bipedal Locomotion using Benders Decomposition
-                                                </h3>
-                                        </header>
-                                        <p>
-                                            Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
-                                            Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
-                                        </p>
-                                        <div class="featured-keywords__container">
-                                            <p class="featured__keyword">Motion Planning</p>
-                                            <p class="featured__keyword">Signal Temporal Logic</p>
-                                            <p class="featured__keyword">Model Predictive Control</p>
-                                            <p class="featured__keyword">Bipedal Locomotion</p>
-                                            <p class="featured__keyword">ROS</p>
-                                            <p class="featured__keyword">MuJoCo</p>
-                                            <p class="featured__keyword">Humanoid</p>
-                                            <p class="featured__keyword">Python</p>
-                                            <p class="featured__keyword">C++</p>
-                                        </div>
+            <section id="featured" class="section" tabindex="-1">
+                <div class="container">
+                    <header class="section__header fade-up-start" data-gc="fade-up">
+                        <h2>Featured Projects</h2>
+                        <div class="line line--horizontal line--heading" aria-hidden="true"></div>
+                    </header>
+                    <!-- TODO: Add code to make an interesting featured projects section -->
+                    <div class="featured__list">
+                        <a href="https://bipedal-stl.github.io/" class="featured__link">
+                            <article class="featured fade-up-start" data-gc="fade-up">
+                                <!-- <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/STL_MLD.png" alt="STL-MLD"> -->
+                                <video autoplay loop muted playsinline class="featured__vid" style="background-color: white; object-position: 44% center;">
+                                    <source src="./assets/blog/doorpuzzle_demo.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="featured__content">
+                                    <header class="featured__header">
+                                            <h3 class="featured__title">
+                                                Accelerating Signal-Temporal-Logic-Based Task and Motion Planning of Bipedal Locomotion using Benders Decomposition
+                                            </h3>
+                                    </header>
+                                    <p>
+                                        Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
+                                        Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
+                                    </p>
+                                    <div class="featured-keywords__container">
+                                        <p class="featured__keyword">Motion Planning</p>
+                                        <p class="featured__keyword">Signal Temporal Logic</p>
+                                        <p class="featured__keyword">Model Predictive Control</p>
+                                        <p class="featured__keyword">Bipedal Locomotion</p>
+                                        <p class="featured__keyword">ROS</p>
+                                        <p class="featured__keyword">MuJoCo</p>
+                                        <p class="featured__keyword">Humanoid</p>
+                                        <p class="featured__keyword">Python</p>
+                                        <p class="featured__keyword">C++</p>
                                     </div>
-                                </article>
-                            </a>
-                            <a href="ball_tracking.html" class="featured__link">
-                                <article class="featured fade-up-start" data-gc="fade-up">
-                                    <div class="featured__content">
-                                        <header class="featured__header">
-                                                <h3 class="featured__title">
-                                                    Perception-Based Football Tracking with a 3-DOF Gimbal Mounted on a Quadruped
-                                                </h3>
-                                        </header>
-                                        <p>
-                                            Led the development of a perception-based object-tracking pipeline to detect and track fast-moving footballs 
-                                            using a high-speed camera on a 3-DOF gimbal attached to a quadruped.. Trained a YOLO model to detect a moving football using synthetic image generation.
-                                        </p>
-                                        <p>
-                                            Achieved 95% tracking accuracy for footballs thrown at 25–35 mph over 5–15 meters.
-                                        </p>
-                                        <div class="featured-keywords__container">
-                                            <p class="featured__keyword">Object Tracking</p>
-                                            <p class="featured__keyword">PID</p>
-                                            <p class="featured__keyword">Quadruped</p>
-                                        </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="ball_tracking.html" class="featured__link">
+                            <article class="featured fade-up-start" data-gc="fade-up">
+                                <div class="featured__content">
+                                    <header class="featured__header">
+                                            <h3 class="featured__title">
+                                                Perception-Based Football Tracking with a 3-DOF Gimbal Mounted on a Quadruped
+                                            </h3>
+                                    </header>
+                                    <p>
+                                        Led the development of a perception-based object-tracking pipeline to detect and track fast-moving footballs 
+                                        using a high-speed camera on a 3-DOF gimbal attached to a quadruped.. Trained a YOLO model to detect a moving football using synthetic image generation.
+                                    </p>
+                                    <p>
+                                        Achieved 95% tracking accuracy for footballs thrown at 25–35 mph over 5–15 meters.
+                                    </p>
+                                    <div class="featured-keywords__container">
+                                        <p class="featured__keyword">Object Tracking</p>
+                                        <p class="featured__keyword">PID</p>
+                                        <p class="featured__keyword">Quadruped</p>
                                     </div>
-                                    <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/football_tracking.png" alt="STL-MLD">
-                                </article>
-                            </a>
-                        </div>
+                                </div>
+                                <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/football_tracking.png" alt="STL-MLD">
+                            </article>
+                        </a>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <!-- END FEATURED PROJECTS -->
             <!-- BLOG -->
             <section id="blog" class="section" tabindex="-1">
@@ -710,7 +763,7 @@
                                 <div class="line line--horizontal line--about-me"></div>
                                 <img loading="lazy" class="img-fluid about__img lazyload"
                                     data-src="./assets/about/professional-portrait2.jpg"
-                                    alt="Man smiling with hand in pocket">
+                                    alt="Portrait">
                             </div>
                         </div>
                         <div class="about__content">
