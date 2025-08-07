@@ -4,38 +4,6 @@
     justify-content: flex-start;
 }
 
-// .featured__panel {
-//     width: 30%;
-//     // height: 1000px;
-//     height: 100vh;
-//     overflow: hidden;
-
-//     // border: 1px solid red;
-
-//     // margin-left: 20px;
-//     // margin-top: 220px; // TODO: Make sure this height is valid for any screen size
-
-//     background-color: $primary;
-// }
-
-// .featured-panel__img {
-//     width: 50%;
-//     height: auto;
-//     object-fit: cover;
-//     aspect-ratio: 1 / 1;
-// }
-
-// .featured-panel__content {
-//     position: fixed;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     width: 30%;
-//     height: 100vh;
-
-//     z-index: 2;
-// }
-
 .featured__profile {
     margin: 0px;
 }
@@ -70,8 +38,8 @@
     margin-right: 100px;
     margin-bottom: 20px;
 
-    border: 2px solid $blue; // TODO: Make similar to colors currently used
-    border-radius: 8px;
+    border: 1px solid $primary-40; // TODO: Make similar to colors currently used
+    // border-radius: 8px;
     // background-color: rgb(245, 245, 255); // TODO: Make into variable
     // background-color: $primary-20;
     background-color: $primary-20;
@@ -92,7 +60,7 @@
 
 .featured__img {
     border: 1px solid gainsboro;
-    border-radius: 8px;
+    // border-radius: 8px;
 
     width: 25%; // TODO: Change to height
     margin: pxToRem(20px);
@@ -108,7 +76,7 @@
 
 .featured__vid {
     border: 1px solid gainsboro;
-    border-radius: 8px;
+    // border-radius: 8px;
     
 
     width: auto;

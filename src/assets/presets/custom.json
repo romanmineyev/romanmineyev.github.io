@@ -1,8 +1,8 @@
 {
-    "autoPlay": false,
+    "autoPlay": true,
     "background": {
       "color": {
-        "value": "#192136"
+        "value": "#000010"
       }
     },
     "fullScreen": {
@@ -69,7 +69,7 @@
         "connect": {
           "distance": 80,
           "links": {
-            "opacity": 0.5
+            "opacity": 0.2
           },
           "radius": 60
         },
@@ -237,7 +237,7 @@
         "value": 200
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.2,
         "animation": {
           "count": 0,
           "enable": false,

@@ -1,6 +1,6 @@
 // define variable for width of particles and side panel
-$panel-width: 30%;
-$profile-dim: 100px;
+$panel-width: 25%;
+$profile-dim: 125px;
 
 #tsparticles { // params for particles floating in the background
     position: fixed;
@@ -19,10 +19,15 @@ $profile-dim: 100px;
 
     width: $panel-width;
     height: 100vh;
-    margin-left: 20px;
+    // margin-left: 20px;
     margin-top: 20px;
 
     z-index: 2;
+}
+
+.panel__header {
+    display: flex;
+    margin-bottom: 125px;
 }
 
 .panel__title {
@@ -32,11 +37,12 @@ $profile-dim: 100px;
     border-radius: pxToRem(2px);
     color: white;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .panel-profile__wrapper {
-    margin-bottom: 20px;
+    margin-left: 20px;
+    // margin-bottom: 20px;
 
     width: $profile-dim;
     height: $profile-dim;
@@ -61,7 +67,46 @@ $profile-dim: 100px;
     min-width: 0; // 🛠 This is crucial
     max-width: 100%;
 
-    padding-right: 50px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.panel-cv__button {
+    display: flex;
+    align-self:center;
+    padding: 0.1rem 0.5rem;
+    margin-top: auto;
+    margin-bottom: 50px;
+    
+    border: 1px solid darkorange;
+    border-radius: 0.3rem !important;
+    // background-color: #000010;
+
+    height: auto;
+    max-height: 100%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkorange;
+
+    transition: 
+        box-shadow 0.0s ease-out,
+        color 0.0s ease-out;
+}
+
+.panel-cv__button:hover {
+    // box-shadow: 0 0px 10px darkorange; // TODO: I don't like this color shadow
+    // transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+.panel-cv__button:hover,
+.panel-cv__button:focus {
+    color: #000010;
+    box-shadow: inset 0 -3.25em 0 0 darkorange;
+    transition: box-shadow 0.3s ease-in, color 0.3s ease-in;
 }
 
 .panel__buttons { // TODO: change color when highlighted
@@ -69,21 +114,29 @@ $profile-dim: 100px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
-    margin-top: auto;
-    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-bottom: 30px;
 }
 
 .panel__button {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: fill 0.5s, filter 0.5s, box-shadow 0.5s;
 }
 
-// .panel__button: {
-//     svg {
-//         fill: black; // default color
-//         transition: fill 0.3s ease;
-    
-//         @include animoff();
-//       }
-// }
+.panel__button:hover {
+    fill: #ffffff; // hover color
+    filter: drop-shadow(0 0 10px white);
+    transition: fill 0.5s, filter 0.5s, box-shadow 0.5s;
+    // transition: fill 0.5s, filter 0.5s, box-shadow 0.5s;
+}
+
+.panel-header__title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    color: $primary-40;
+
+    margin-left: 20px;
+}

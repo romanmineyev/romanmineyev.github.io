@@ -60,23 +60,38 @@ svg {
 
 .container-fluid,
 .container {
-    width: 100%;
-    padding-#{$end-direction}: 1rem;
-    padding-#{$start-direction}: 1rem;
+    // width: 100%;
+    max-width: 90%;
+    // padding-#{$end-direction}: 1rem;
+    // padding-#{$start-direction}: 1rem;
     margin-#{$end-direction}: auto;
     margin-#{$start-direction}: auto;
 }
 
+// .container {
+//     @include mq($breakpoint-lg) {
+//         max-width: 85%;
+//     }
+
+//     @include mq($breakpoint-xl) {
+//         max-width: pxToRem(1090px);
+//     }
+
+//     @include mq(1260px) {
+//         max-width: pxToRem(1140px);
+//     }
+// }
+
 .container {
-    @include mq($breakpoint-lg) {
-        max-width: 85%;
-    }
+    // @include mq($breakpoint-lg) {
+    //     max-width: 90%;
+    // }
 
-    @include mq($breakpoint-xl) {
-        max-width: pxToRem(1090px);
-    }
+    // @include mq($breakpoint-xl) {
+    //     max-width: pxToRem(1150px); // previously 1090px
+    // }
 
-    @include mq(1260px) {
-        max-width: pxToRem(1140px);
-    }
+    // @include mq(1260px) {
+    //     max-width: pxToRem(1200px); // this is my computer's specs
+    // }
 }

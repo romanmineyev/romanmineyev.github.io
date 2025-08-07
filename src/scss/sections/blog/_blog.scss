@@ -1,16 +1,16 @@
 .blog__grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: $grid-column-gap;
     row-gap: $grid-column-gap;
 
-    @include mq($breakpoint-md){
-        grid-template-columns: 1fr 1fr;
-    }
+    // @include mq($breakpoint-md){
+    //     grid-template-columns: 1fr 1fr;
+    // }
 
-    @include mq($breakpoint-lg){
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    // @include mq($breakpoint-lg){
+    //     grid-template-columns: 1fr 1fr 1fr;
+    // }
 }
 
 .blog-post {
@@ -19,7 +19,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding: 20px;
+    // padding-bottom: 3rem;
+
+    border: 1px solid $primary-40;
+    background-color: $primary-20;
+    // color: $primary-20;
 }
 
 .blog-post__surface {
@@ -45,32 +50,51 @@
 
         @include animoff;
         
-        &:hover {
-            text-decoration: underline;
-        }
+        // &:hover {
+        //     text-decoration: underline;
+        // }
     }
 }
 
 .blog-post__img-link {
-    display: block;
-    transition: box-shadow $transition-duration $transition-time-function;
+    // display: block;
+    // justify-content: center;
+    // width: 100%;
+    // max-width: 100%;
+    // height: auto;
+    // align-self: center;
+    // transition: box-shadow $transition-duration $transition-time-function;
 
-    @include animoff;
+    // @include animoff;
+    // width: 100%;
+    // width: 50%;
+    // align-self: center;
 }
 
 .blog-post__img {
-    box-shadow: 0;    
-    transition: box-shadow $transition-duration $transition-time-function,
-        opacity $transition-duration $transition-time-function;
+    // box-shadow: 0;    
+    // transition: box-shadow $transition-duration $transition-time-function,
+    //     opacity $transition-duration $transition-time-function;
 
-    @include animoff();
+    // @include animoff();
+    // align-items: center;
+    // width: auto;
+    // width: 90%;
+    // height: auto;
+    // align-items: center;
+    // margin: 10px;
+
+    
+
+    // border: 1px solid gainsboro;
+    
 }
 
-.blog-post__img,
-.blog-post__content,
-.blog-post__header {
-    width: calc(100% - #{pxToRem(50px)});
-}
+// .blog-post__img,
+// .blog-post__content,
+// .blog-post__header {
+//     width: calc(100% - #{pxToRem(50px)});
+// }
 
 .blog-post__footer {
     position: relative;

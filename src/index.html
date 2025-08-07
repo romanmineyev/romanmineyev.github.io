@@ -72,9 +72,6 @@
 
             <!-- SITE LOGO -->
             <a id="site-brand" class="site-brand" href="#banner"></a>
-            <!-- Uncomment the line below to use image logos instead of text -->
-            <!-- <a id="site-brand" class="site-brand-img" href="#banner"><img src="https://via.placeholder.com/100x40" alt="Site logo"></a> -->
-            <!-- END SITE LOGO -->
 
             <!-- SITE NAVIGATION -->
             <nav aria-label="Site navigation" id="site-navigation" class="site-navigation">
@@ -83,9 +80,6 @@
                         <li class="navigation__item">
                             <a class="navigation__link" href="#featured">Projects</a>
                         </li>
-                        <!-- <li class="navigation__item">
-                            <a class="navigation__link" href="#blog">Projects</a>
-                        </li> -->
                         <li class="navigation__item">
                             <a class="navigation__link" href="#publications">Publications</a>
                         </li>
@@ -96,33 +90,17 @@
                             <a class="navigation__link" href="#experience">Experience</a>
                         </li>
                         <!-- <li class="navigation__item">
-                            <a class="navigation__link" href="#services">Services</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#clients">Clients</a>
-                        </li> -->
-                        <!-- <li class="navigation__item">
-                            <a class="navigation__link" href="#portfolio">Portfolio</a>
-                        </li> -->
-                        <li class="navigation__item">
                             <a class="navigation__link" href="#contact">Contact</a>
-                        </li>
-                        <li class="navigation__item">
-                            <!-- <a href="#banner" id="download-button"
-                                        class="banner__button button button--default"><span class="line--underline">Download
-                                            Resume</span>
-                            </a> -->
-                            <a class="navigation__link" href="./assets/about/CV.pdf" download><span class=about_highlight_text>Download Resume</span></a>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <div class="site-navigation__theme-buttons">
                         <button id="a11y-preferences-btn" type="button"
                             class="button button--link button--icon-default button--a11y-preferences"
                             aria-controls="a11y-preferences" aria-expanded="false">
-                            <span class="material-icons" aria-hidden="true">accessibility_new</span>
+                            <!-- <span class="material-icons" aria-hidden="true">accessibility_new</span>
                             <span class="button__text">Accessibility</span>
-                            <span class="sr-only">Open preferences</span>
+                            <span class="sr-only">Open preferences</span> -->
                         </button>
                     </div>
                 </div>
@@ -235,12 +213,20 @@
         <!-- END ACCESSIBILITY PREFERENCES -->
 
         <div class="panel">
-            <div class="panel-profile__wrapper">
-                <img loading="lazy" class="img-fluid panel__profile lazyload"
-                data-src="./assets/about/professional-portrait.jpg"
-                alt="Portrait">
+            <div class="panel__header">
+                <div class="panel-header__title">
+                    <h1 class="panel__title">Roman Mineyev</h1>
+                    <p>
+                        rmineyev3@gatech.edu <br>
+                        (217) 372-9357
+                    </p>
+                </div>
+                <div class="panel-profile__wrapper">
+                    <img loading="lazy" class="img-fluid panel__profile lazyload"
+                    data-src="./assets/about/professional-portrait.jpg"
+                    alt="Portrait">
+                </div>
             </div>
-            <h1 class="panel__title">Roman Mineyev</h1>
             <div class="panel__text">
                 <!-- <p>
                     Master in Robotics at Georgia Institute of Technology (Georgia Tech)
@@ -250,22 +236,14 @@
                     I am a second-year Master in Robotics student at Georgia Tech, specializing 
                     in Machine Learning, Perception, and Task and Motion Planning algorithms.
                 </p>
-                <!-- <p>
-                    I am a Master in Robotics student at the Georgia Institute of Technology.
-                    I currently work at The Laboratory for Intelligent Decision and Autonomous Robots (<a class=about_highlight_text href="https://lab-idar.gatech.edu/" target="_blank">LIDAR</a>) Lab on <span>Bipedal Motion Planning</span>, <span>Control</span>, and <span>Social Navigation</span>.
-                </p>
-                During my undergraduate years, I was a Mathematics & Computer Science major at the University of Illinois at Champaign-Urbana. I conducted 1.5 years of research at the Kinetic Intelligent Machines LAB (<a class=about_highlight_text href="https://publish.illinois.edu/kimlab2020/" target="_blank">KIMLAB</a>), where I contributed to a broad range of projects, ranging from autonomous chess playing with a robotic arm system to mobile-base manipulation. 
-                <p>
-                </p>
-                <p>
-                    My passion stems from a relentless curiosity and drive to improve the quality of human lives through robotics.
-                    This dedication motivates me to tackle complex challenges in robotics and contribute to advancements that can shape the future of humanity.
-                </p> -->
-
                 <p>
                     I am available for Fall/Spring 2026 Internships and Jobs!
                 </p>
             </div>
+
+            <a class="panel-cv__button" href="./assets/about/CV.pdf" target="_blank">
+                Download CV
+            </a>
             
             <div class="panel__buttons">
                 <a class="button button--icon panel__button"
@@ -287,6 +265,12 @@
                     </svg>
                 </a>
             </div>
+            <!-- <div class="panel__contacts">
+                <p>
+                    rmineyev3@gatech.edu <br>
+                    (217)372-9357 <br>
+                </p>
+            </div> -->
         </div>
 
         <!-- SITE MAIN CONTENT -->
@@ -369,15 +353,13 @@
                     </header>
                     <div class="blog__grid">
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
-                                <a class="blog-post__img-link" href="https://ieeexplore.ieee.org/document/10597443" target="_blank">
-                                    <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                        data-src="./assets/blog/door_opening.png" alt="Autonomous Door-Opening">
-                                </a>
+                                <img loading="lazy" class="blog-post__img img-fluid lazyload"
+                                    data-src="./assets/blog/door_opening.png" alt="Autonomous Door-Opening">
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
-                                        <a href="https://ieeexplore.ieee.org/document/10597443" target="_blank">Autonomous Door-Opening with a Dual-Arm Robot</a>
+                                        Autonomous Door-Opening with a Dual-Arm Robot
                                     </h3>
                                     <div class="blog-post__author">
                                         <div class="heading-5">
@@ -396,15 +378,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://ieeexplore.ieee.org/document/10597443" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Autonomous Door-Opening</span>
-                                </a>
                             </footer>
                         </article>
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="https://ieeexplore.ieee.org/document/10375209" target="_blank">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -432,15 +409,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://ieeexplore.ieee.org/document/10375209" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Autonomous Chess Gameplay</span>
-                                </a>
-                            </footer>
                         </article>
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -467,15 +438,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://ieeexplore.ieee.org/document/10202297" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: 3D Object Reconstruction</span>
-                                </a>
-                            </footer>
                         </article>
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -502,15 +467,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="#blog">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Multi-Object Grasping with MOMO</span>
-                                </a>
-                            </footer> -->
                         </article>
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -540,20 +499,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://github.com/elkebir-group/mach2-viz" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: MACH2</span>
-                                </a>
-                                <!-- <a class="blog-post__read-more" href="https://github.com/elkebir-group/mach2-viz" target="_blank">
-                                    <span aria-hidden="true">Github Link</span>
-                                    <span class="sr-only">Read more about: MACH2</span>
-                                </a> -->
-                            </footer>
                         </article>
 
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -582,16 +531,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://mineyev2.github.io/game_of_life/" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Cellular Automata</span>
-                                </a>
-                            </footer>
                         </article>
 
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -615,16 +558,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="https://appadvice.com/app/whack-a-mole-deluxe/1514328040" target="_blank">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Whack-A-Mole Deluxe</span>
-                                </a>
-                            </footer>
                         </article>
 
                         <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
+                            <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <a class="blog-post__img-link" href="#blog">
                                     <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -653,12 +590,6 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="#blog">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: Raspberry Pi Quadrotor</span>
-                                </a>
-                            </footer> -->
                         </article>
                     </div>
                 </div>
@@ -672,40 +603,6 @@
                         <div class="line line--horizontal line--heading" aria-hidden="true"></div>
                         <!-- <p class="section__header-p">Here are a list of some of the projects that I have worked on.</p> -->
                     </header>
-                    <!-- <div class="blog__grid">
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <span class="blog-post__surface"></span>
-                            <div class="position-relative">
-                                <a class="blog-post__img-link" href="#blog">
-                                    <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                        data-src="./assets/blog/STL_MLD.png" alt="Banana over pink background">
-                                </a>
-                                <header class="blog-post__header">
-                                    <h3 class="blog-post__title heading-4">
-                                        <a href="#blog">STL_MLD: Optimization-Based Task and Motion Planner for Bipedal Robots</a>
-                                    </h3>
-                                    <div class="blog-post__author">
-                                        <div class="heading-5">
-                                            <time class="heading-5 blog-post__date">Motion Planning, Signal Temporal Logic, Model-Predictive Control, Bipedal Locomition, ROS, MuJoCo, Humanoid, Python, C++</time>
-                                        </div>
-                                        <div class="line line--horizontal line--post"></div>
-                                    </div>
-                                </header>
-                                <div class="blog-post__content">
-                                    <p>
-                                        Developed an optimization-based task and motion planner under signal temporal logic (STL) and Mixed-Integer 
-                                        Programming (MIP) for humanoid robots, and demonstrating its effectiveness on the MuJoCo simulator and hardware.
-                                    </p>
-                                </div>
-                            </div>
-                            <footer class="blog-post__footer">
-                                <a class="blog-post__read-more" href="#blog">
-                                    <span aria-hidden="true">Read more</span>
-                                    <span class="sr-only">Read more about: STL_MLD</span>
-                                </a>
-                            </footer>
-                        </article>
-                    </div> -->
 
                     <div class="publications__list">
                         <article class="publications fade-up-start" data-gc="fade-up">
@@ -863,7 +760,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hire-me fade-up-start" data-gc="fade-up">
+                <!-- <div class="hire-me fade-up-start" data-gc="fade-up">
                     <span class="hire-me__surface"></span>
                     <div class="hire-me__content">
                         <h2>I'm available for Summer 2025 Internships</h2>
@@ -872,7 +769,7 @@
                         </a>
                     </div>
                     <span class="hire-me__line"></span>
-                </div>
+                </div> -->
             </section>
             <!-- END ABOUT SECTION -->
             <!-- EXPERIENCE SECTION -->
@@ -1008,13 +905,11 @@
             <!-- END EXPERIENCE SECTION -->
             <!-- SERVICES SECTION -->
             <!-- CONTACT SECTION -->
-            <section id="contact" class="section" tabindex="-1">
+            <!-- <section id="contact" class="section" tabindex="-1">
                 <div class="container">
                     <header class="section__header fade-up-start" data-gc="fade-up">
                         <h2>Contact</h2>
                         <div class="line line--horizontal line--heading" aria-hidden="true"></div>
-                        <!-- <p class="section__header-p">Are you open to talk about new jobs opportunities? Show all the
-                            ways people can contact you.</p> -->
                     </header>
                     <div class="contact__grid">
                         <div class="fade-up-start" data-gc="fade-up">
@@ -1040,50 +935,11 @@
                         <div class="fade-up-start" data-gc="fade-up">
                             <form action="" method="POST" enctype="multipart/form-data" class="form-contact"
                                 id="contact-form">
-                                <!-- <span class="form-contact__surface"></span>
-                                <div class="form-group">
-                                    <div id="form-live-region" class="form__message" role="alert" aria-atomic="true"
-                                        data-error-instruction="There were some issues with the form submission"></div>
-                                </div> -->
-                                <!-- <div class="form-group">
-                                    <p>All fields are required.</p>
-                                </div>
-                                <div class="form-contact__two-columns">
-                                    <div class="form-group">
-                                        <label class="form__label" for="form-name">Name</label>
-                                        <input class="form-control form__field" type="text" id="form-name" name="name"
-                                            data-error-message="Name is a require field." aria-required="true">
-                                        <span class="material-icons form__field-icon" aria-hidden="true">error</span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form__label" for="form-email">Email</label>
-                                        <input class="form-control form__field" type="email" id="form-email"
-                                            name="email" data-error-message="Insert a valid e-mail."
-                                            aria-required="true">
-                                        <span class="material-icons form__field-icon" aria-hidden="true">error</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form__label" for="form-message">Message</label>
-                                    <textarea class="form-control form__field" id="form-message" rows="5" name="message"
-                                        data-error-message="Message is a require field."
-                                        aria-required="true"></textarea>
-                                    <span class="material-icons form__field-icon" aria-hidden="true">error</span>
-                                </div>
-                                <div class="form-group form__button-wrapper">
-                                    <button type="submit" id="contact-form__submit-button"
-                                        class="button button--default">
-                                        <span class="button__text line--underline">Submit</span>
-                                        <span class="button__spinner spinner-dual-ring">
-                                            <span></span>
-                                        </span>
-                                    </button>
-                                </div> -->
                             </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- END CONTACT SECTION -->
         </main>
         <!-- END SITE MAIN CONTENT -->

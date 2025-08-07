@@ -248,7 +248,7 @@ export default class SiteHeader {
         this.DOM.siteNavigationToggler.setAttribute('aria-expanded', 'false');
         this.DOM.siteNavigation.classList.remove(SITE_NAVIGATION_MOBILE_ACTIVE_CLASSNAME);
         this.DOM.siteNavigation.style.opacity = '';
-        getEl('#a11y-preferences-btn').style.opacity = '';
+        // getEl('#a11y-preferences-btn').style.opacity = '';
         queryAll('#site-navigation .navigation__item').forEach(item => {
             item.style.transform = "";
             item.style.opacity = "";

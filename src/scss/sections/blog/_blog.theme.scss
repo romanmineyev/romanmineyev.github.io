@@ -14,13 +14,13 @@
         }
     }
 
-    .blog-post__img-link:active .blog-post__img,
-    .blog-post__img:hover {
-        @if $is-dark {
-            box-shadow: 0px 8px 20px rgba($color: rgb(0, 0, 0 ), $alpha: .50);
-        } @else {
-            box-shadow: 0px 8px 20px rgba($color: $primary, $alpha: .45);
-            opacity: .9;
-        }
-    }
+    // .blog-post__img-link:active .blog-post__img,
+    // .blog-post__img:hover {
+    //     @if $is-dark {
+    //         box-shadow: 0px 8px 20px rgba($color: rgb(0, 0, 0 ), $alpha: .50);
+    //     } @else {
+    //         box-shadow: 0px 8px 20px rgba($color: $primary, $alpha: .45);
+    //         opacity: .9;
+    //     }
+    // }
 }
