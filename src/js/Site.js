@@ -56,7 +56,7 @@ export default class Site {
             new AboutMe();
             new Portfolio();
             // new Contact();
-            new A11yPreferences(this.siteState);
+            // new A11yPreferences(this.siteState);
             new Preloader(this.siteState);
         }
     }

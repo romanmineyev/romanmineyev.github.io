@@ -71,6 +71,11 @@ $profile-dim: 125px;
     padding-right: 20px;
 }
 
+.panel-highlight__text {
+    color: $primary-40;
+    font-weight: bold;
+}
+
 .panel-cv__button {
     display: flex;
     align-self:center;
@@ -95,15 +100,9 @@ $profile-dim: 125px;
         color 0.0s ease-out;
 }
 
-.panel-cv__button:hover {
-    // box-shadow: 0 0px 10px darkorange; // TODO: I don't like this color shadow
-    // transition: all 0.3s ease;
-
-    cursor: pointer;
-}
-
 .panel-cv__button:hover,
 .panel-cv__button:focus {
+    cursor: pointer;
     color: #000010;
     box-shadow: inset 0 -3.25em 0 0 darkorange;
     transition: box-shadow 0.3s ease-in, color 0.3s ease-in;

@@ -27,6 +27,13 @@
     // color: $primary-20;
 }
 
+.blog-post:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
 .blog-post__surface {
     position: absolute;
     top: pxToRem(20px);
@@ -55,46 +62,6 @@
         // }
     }
 }
-
-.blog-post__img-link {
-    // display: block;
-    // justify-content: center;
-    // width: 100%;
-    // max-width: 100%;
-    // height: auto;
-    // align-self: center;
-    // transition: box-shadow $transition-duration $transition-time-function;
-
-    // @include animoff;
-    // width: 100%;
-    // width: 50%;
-    // align-self: center;
-}
-
-.blog-post__img {
-    // box-shadow: 0;    
-    // transition: box-shadow $transition-duration $transition-time-function,
-    //     opacity $transition-duration $transition-time-function;
-
-    // @include animoff();
-    // align-items: center;
-    // width: auto;
-    // width: 90%;
-    // height: auto;
-    // align-items: center;
-    // margin: 10px;
-
-    
-
-    // border: 1px solid gainsboro;
-    
-}
-
-// .blog-post__img,
-// .blog-post__content,
-// .blog-post__header {
-//     width: calc(100% - #{pxToRem(50px)});
-// }
 
 .blog-post__footer {
     position: relative;
