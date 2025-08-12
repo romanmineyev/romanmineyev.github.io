@@ -230,7 +230,7 @@
                     </header>
                     <!-- TODO: Add code to make an interesting featured projects section -->
                     <div class="featured__list">
-                        <a href="https://bipedal-stl.github.io/" class="featured__link">
+                        <a href="https://bipedal-stl.github.io/" target="_blank" class="featured__link">
                             <article class="featured fade-up-start" data-gc="fade-up">
                                 <!-- <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/STL_MLD.png" alt="STL-MLD"> -->
                                 <video autoplay loop muted playsinline class="featured__vid" style="background-color: white; object-position: 44% center;">
@@ -282,7 +282,7 @@
                                         <p class="featured__keyword">Quadruped</p>
                                     </div>
                                 </div>
-                                <img loading="lazy" class="featured__img img-fluid lazyload" data-src="./assets/blog/football_tracking.png" alt="STL-MLD">
+                                <img loading="lazy" class="featured__img lazyload" data-src="./assets/blog/football_catching_hardware.jpg" alt="STL-MLD">
                             </article>
                         </a>
                     </div>
@@ -295,14 +295,40 @@
                     <header class="section__header fade-up-start" data-gc="fade-up">
                         <h2>Other Noteworthy Projects</h2>
                         <div class="line line--horizontal line--heading" aria-hidden="true"></div>
-                        <!-- <p class="section__header-p">Here are a list of some of the projects that I have worked on.</p> -->
                     </header>
                     <div class="blog__grid">
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        <a class="blog-post fade-up-start" href="https://github.com/ped02/DIAYN/tree/main" target="_blank" data-gc="fade-up">
                             <div class="position-relative">
-                                <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                    data-src="./assets/blog/door_opening.png" alt="Autonomous Door-Opening">
+                                <video autoplay loop muted playsinline class="blog__vid" style="background-color: white; object-position: 44% center;">
+                                    <source src="./assets/blog/drl_project.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <header class="blog-post__header">
+                                    <h3 class="blog-post__title heading-4">
+                                        Dynamics is All You Need (DIAYN) Reproduction and Improvement
+                                    </h3>
+                                    <div class="blog-post__author">
+                                        <div class="heading-5">
+                                            <time class="heading-5 blog-post__date">Deep Reinforcement Learning (DRL), Skill Discovery, Robosuite</time>
+                                        </div>
+                                        <div class="line line--horizontal line--post"></div>
+                                    </div>
+                                </header>
+                                <div class="blog-post__content">
+                                    <p>
+                                        Implemented a DRL algorithm capable of learning diverse skills without a reward function, and explored potential improvements 
+                                        by introducing VAEs for condensed state representation, as well as HRL to demonstrate skill transferability.
+                                    </p>
+                                </div>
+                            </div>
+                            </footer>
+                        </a>
+                        <a class="blog-post fade-up-start" href="https://ieeexplore.ieee.org/document/10597443" target="_blank" data-gc="fade-up">
+                            <div class="position-relative">
+                                <video autoplay loop muted playsinline class="blog__vid" style="background-color: white; object-position: 44% center;">
+                                    <source src="./assets/blog/door_opening.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
                                         Autonomous Door-Opening with a Dual-Arm Robot
@@ -325,11 +351,37 @@
                                 </div>
                             </div>
                             </footer>
-                        </article>
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
+                        </a>
+                        <a class="blog-post-no-link fade-up-start" data-gc="fade-up">
                             <div class="position-relative">
-                                    <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                        data-src="./assets/blog/autonomous_chess.png" alt="Banana over pink background">
+                                <img loading="lazy" class="blog-post__img img-fluid lazyload"
+                                    data-src="./assets/blog/buzzdrive.png" alt="Banana over pink background">
+                                <header class="blog-post__header">
+                                    <h3 class="blog-post__title heading-4">
+                                        Visual and Tactile Cues for Teleoperated Mobile Robots
+                                    </h3>
+                                    <div class="blog-post__author">
+                                        <div class="heading-5">
+                                            <time class="heading-5 blog-post__date">Human-to-Robot Interaction (HRI), Path Planning, User Study</time>
+                                        </div>
+                                        <div class="line line--horizontal line--post"></div>
+                                    </div>
+                                </header>
+                                <div class="blog-post__content">
+                                    <p>
+                                        Evaluated the effectiveness of haptic and visual and tactile cues in a demo 
+                                        video game environment, using the NASA-TLX questionnaire for our user study.
+                                    </p>
+                                </div>
+                            </div>
+                            </footer>
+                        </a>
+                        <a class="blog-post fade-up-start" href="https://www.youtube.com/watch?v=GsLxrXSdOqA" target="_blank" data-gc="fade-up">
+                            <div class="position-relative">
+                                <video autoplay loop muted playsinline class="blog__vid" style="background-color: white; object-position: 44% center;">
+                                    <source src="./assets/blog/chess_robot.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
                                         Exploring the Capabilities of a General-Purpose Robotic Arm in Chess Gameplay
@@ -351,12 +403,13 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        </a>
+                        <a class="blog-post fade-up-start" href="https://ieeexplore.ieee.org/document/10202297" target="_blank" data-gc="fade-up">
                             <div class="position-relative">
-                                <img loading="lazy" class="blog-post__img img-fluid lazyload"
-                                    data-src="./assets/blog/object_reconstruction.png" alt="Banana over pink background">
+                                <video autoplay loop muted playsinline class="blog__vid" style="background-color: white; object-position: 44% center;">
+                                    <source src="./assets/blog/object-reconstruction.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                                 <header class="blog-post__header">
                                     <h3 class="blog-post__title heading-4">
                                         Manipulation-Driven 3D Object Reconstruction: Optimized Grasping and Rotational Scanning for Robust Point Cloud Generation
@@ -378,9 +431,8 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        </a>
+                        <a class="blog-post-no-link fade-up-start" data-gc="fade-up">
                             <div class="position-relative">
                                 <img loading="lazy" class="blog-post__img img-fluid lazyload"
                                     data-src="./assets/blog/MOMO.jpg" alt="Banana over pink background">
@@ -401,13 +453,12 @@
                                         its three arms.
                                     </p>
                                     <p>
-                                    Manuscript to be submitted to the IEEE Robotics & Automation Magazine.
+                                    Manuscript submitted to the IEEE Robotics & Automation Magazine.
                                     </p>
                                 </div>
                             </div>
-                        </article>
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        </a>
+                        <a class="blog-post fade-up-start" href="https://elkebir-group.github.io/mach2-viz/#/" target="_blank" data-gc="fade-up">
                             <div class="position-relative">
                                 <img loading="lazy" class="blog-post__img img-fluid lazyload"
                                     data-src="./assets/blog/MACH2.png" alt="Banana over pink background">
@@ -435,10 +486,9 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        <a class="blog-post fade-up-start" href="https://mineyev2.github.io/game_of_life/" target="_blank" data-gc="fade-up">
                             <div class="position-relative">
                                 <img loading="lazy" class="blog-post__img img-fluid lazyload"
                                     data-src="./assets/blog/gospers_glider_gun.gif" alt="Flowering cherry tree">
@@ -465,10 +515,9 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
-                            <!-- <span class="blog-post__surface"></span> -->
+                        <a class="blog-post-no-link fade-up-start" data-gc="fade-up">
                             <div class="position-relative">
                                 <img loading="lazy" class="blog-post__img img-fluid lazyload"
                                     data-src="./assets/blog/whack-a-mole.jpeg" alt="Banana over pink background">
@@ -490,9 +539,9 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
+                        </a>
 
-                        <article class="blog-post fade-up-start" data-gc="fade-up">
+                        <a class="blog-post-no-link fade-up-start" data-gc="fade-up">
                             <!-- <span class="blog-post__surface"></span> -->
                             <div class="position-relative">
                                 <img loading="lazy" class="blog-post__img img-fluid lazyload"
@@ -520,7 +569,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </article>
+                        </a>
                     </div>
                 </div>
             </section>

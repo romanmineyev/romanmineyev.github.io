@@ -24,7 +24,6 @@
     transform: translateY(-2px);
     transition: all 0.3s ease;
 }
-
 .featured {
     position: relative;
     height: 100%;
@@ -60,18 +59,14 @@
 
 .featured__img {
     border: 1px solid gainsboro;
-    // border-radius: 8px;
 
-    width: 25%; // TODO: Change to height
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+
+    // padding-top: pxToRem(10px);
+    // padding-bottom: pxToRem(10px);
     margin: pxToRem(20px);
-
-    height: auto;
-    display: block;
-    object-fit: cover; // optional, if img is inside a box
-
-    // TODO: how to lock height according to width
-    display: block;
-
 }
 
 .featured__vid {
@@ -79,14 +74,16 @@
     // border-radius: 8px;
     
 
-    width: auto;
-    max-width: 30%; // TODO: Change to height
+    // width: 30%;
+    height: 300px;
+    width: 300px;
+    // max-width: 30%; // TODO: Change to height
 
-    aspect-ratio: 1 / 1;
+    // aspect-ratio: 1 / 1;
     object-fit: cover;
 
-    padding-top: pxToRem(10px);
-    padding-bottom: pxToRem(10px);
+    // padding-top: pxToRem(10px);
+    // padding-bottom: pxToRem(10px);
 
     margin: pxToRem(20px);
 }
